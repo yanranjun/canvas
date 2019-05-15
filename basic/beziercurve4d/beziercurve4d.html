@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<!-- 通过拖动端点和控制点来编辑贝塞尔曲线 -->
+<html>
+  <head>
+    <title>Drawing Bezier Curves</title>
+    <style>
+      body {
+        background: #eee;
+      }
+    </style>
+  </head>
+  <body>
+    <canvas id="canvas" width="605" height="400">
+      canvas not supported
+    </canvas>
+    <!-- 颜色选择 -->
+    <div id="controls">
+      Stroke color: 
+      <select id="strokeStyleSelect">
+        <option value="red">red</option>
+        <option value="green">green</option>
+        <option value="blue">blue</option>
+        <option value="orange">orange</option>
+        <option value="cornflowerblue">cornflowerblue</option>
+        <option value="goldenrod">goldenrod</option>
+        <option value="navy">navy</option>
+        <option value="purple">purple</option>
+      </select>
+      Guidewires:
+      <input id="guidewireCheckbox" type="checkbox" checked/>
+      <input id="eraseAllButton" type="button" value="Erase all"/>
+    </div>
+    <!-- 其他按钮 -->
+    <div id="instructions" class="floatingControls">
+
+    </div>
+
+  </body>
+</html>
