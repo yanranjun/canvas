@@ -7,6 +7,39 @@
       body {
         background: #eee;
       }
+      .floatingControls {
+        position: absolute;
+        left: 150px;
+        top:100px;
+        width: 300px;
+        padding:20px;
+        border: thin solid rgba(0,0,0,0.3);
+        background: rgba(0,0,200,0.1);
+        color:blue;
+        font:14px Arial;
+        -webkit-box-shadow: rgba(0,0,0,0.2) 6px 6px 8px;
+        -moz-box-shadow: rgba(0,0,0,0.2) 6px 6px 8px;
+        box-shadow: rgba(0,0,0,0.2) 6px 6px 8px;
+        display: none;
+      }
+      .floatingControls p {
+        margin-top: 0px;
+        margin-bottom: 20px; 
+      }
+      #controls {
+        position: absolute;
+        left: 25px;
+        top: 25px;
+      }
+      #canvas {
+        background: #fff;
+        cursor: pointer;
+        margin-left: 10px;
+        margin-top: 10px;
+        -webkit-box-shadow: rgba(0,0,0,0.5) 4px 4px 8px;
+        -moz-box-shadow: rgba(0,0,0,0.5) 4px 4px 8px;
+        box-shadow: rgba(0,0,0,0.5) 4px 4px 8px;
+      }
     </style>
   </head>
   <body>
@@ -32,8 +65,11 @@
     </div>
     <!-- 其他按钮 -->
     <div id="instructions" class="floatingControls">
-
+      <p>Drag the curve end-and control prints to change the shape of curve  </p>
+      <p>when you are done dragging end-and control prints, click outside of the points to finalize the curve</p>
+      <input id="instructionsOkayButton" type="button" value="Okay" autofoucus/>
+      <input id="instructionsNoMoreButton" type="button" value="Do not show these instructions again"/>
     </div>
-
+    <!-- <script src="beziercurve4d.js" ></script> -->
   </body>
 </html>
